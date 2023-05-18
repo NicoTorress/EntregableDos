@@ -7,15 +7,18 @@ class Pasajero{
     private $apellido;
     private $nroDocumento;
     private $telefono;
+    private $nroAsiento;
+    private $nroTicket;
 
 
     //METODO CONSTRUCTOR DEL OBJETO
-    public function __construct($nombre, $apellido, $nroDocumento, $telefono){
+    public function __construct($nombre, $apellido, $nroDocumento, $telefono, $nroAsiento, $nroTicket){
         $this->nombre= $nombre;
         $this->apellido= $apellido;
         $this->nroDocumento= $nroDocumento;
         $this->telefono= $telefono;
-
+        $this -> nroAsiento = $nroAsiento;
+        $this -> nroTicket = $nroTicket;
     }
     
 
@@ -62,5 +65,10 @@ class Pasajero{
                   " Número de documento: " . $this->getNroDocumento()." -".
                   " Teléfono: " . $this->getTelefono();
         return $cadena;
+    }
+
+    public function darPorcentajeIncremento(){
+        $porcentaje = 35;
+        return $porcentaje;
     }
 }

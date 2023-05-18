@@ -4,6 +4,7 @@ include_once('Viaje.php');
 include_once('Pasajero.php');
 include_once('ResponsableV.php');
 
+
 /*
 Modificar la clase Viaje para que ahora los pasajeros sean un objeto que tenga los atributos nombre, apellido, 
 numero de documento y teléfono. El viaje ahora contiene una referencia a una colección de objetos de la clase Pasajero. 
